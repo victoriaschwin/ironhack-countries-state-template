@@ -16,6 +16,8 @@ ${el.alpha2Code.toLowerCase()}.png`"
 
 <script setup>
 import { ref } from "vue";
+import { useCountryStore } from "../stores/country.js";
+const countryStore = useCountryStore();
 
 const countries = ref(null);
 
